@@ -3,6 +3,16 @@ bonus_fixo = 1000
 # Informa o nome do usuario
 nome_usuario = input("Digite seu nome: ")
 
+if nome_usuario.isdigit():
+    print("Você digitou seu nome errado.")
+    exit()
+elif len(nome_usuario) == 0:
+    print("Você não digitou nada")
+    exit()
+elif nome_usuario.isspace():
+    print("Você apenas digitou espaço")
+    exit()
+
 # Informa o valor do salario do usuario
 salario_usuario = float(input("Digite o seu salario: "))
 
