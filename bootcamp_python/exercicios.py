@@ -33,3 +33,5 @@ lista_dia_mes_ano = data.split("/")
 print(f"O elemento 1 e o: {lista_dia_mes_ano[0]}")
 print(f"O elemento 2 e o: {lista_dia_mes_ano[1]}")
 print(f"O elemento 3 e o: {lista_dia_mes_ano[2]}")
+
+
