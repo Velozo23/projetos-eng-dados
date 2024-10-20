@@ -1,4 +1,4 @@
-bonus_fixo = 1000
+#bonus_fixo = 1000
 
 # Informa o nome do usuario
 #nome_usuario = input("Digite seu nome: ")
@@ -66,18 +66,53 @@ bonus_fixo = 1000
 
 
 
-lista_impar = []
+# lista_impar = []
 
-lista_par = []
+# lista_par = []
 
-valores = [2, 5, 6, 4, 8, 9, 15, 78, 69, 77, 65, 66, 42, 63, 44, 30, 99, 8, 28, 24, 23, 47, 33]
+# valores = [2, 5, 6, 4, 8, 9, 15, 78, 69, 77, 65, 66, 42, 63, 44, 30, 99, 8, 28, 24, 23, 47, 33]
 
-for i in valores:
-    if i%2 == 0:
-        lista_par.append(i)
+# for i in valores:
+#     if i%2 == 0:
+#         lista_par.append(i)
+#     else:
+#         lista_impar.append(i)
+
+
+# print(f"A lista de valores pares sao: {lista_par}")
+# print(f"A lista de valores impares sao: {lista_impar}")
+
+
+texto = '''arte de levar aproximadamente 28 minutos para decidir o que assistir na Netflix e então escolher uma opção que parece bacana e pensar "Tem algo familiar nesse filme, eu acho que eu já vi algum pedaço dele antes, mas eu devo ter dormido no meio porque não lembro do final".
+
+E então assistir.
+
+
+E então conseguir me manter acordada por todo o filme.
+
+
+E então quando está quase no finalzinho perceber "Nossa, mas eu to acertando todas as coisas que acontecem nesse filme" e se sentir o máximo até cair a ficha que você não só já viu esse filme, como achou o final uma porcaria - e dá uma baita sensação de déjà vu do déjà vu, porque aí cai outra ficha que: não é somente a segunda vez que você já assistiu esse filme, mas é a SEGUNDA VEZ QUE VOCÊ ESQUECEU QUE JÁ VIU ESSE FILME E ASSISTE DE NOVO (essa última vez, na verdade, foi a terceira vez que eu vi) - ou seja, você não é o máximo.
+
+
+Obs.: Infelizmente isso não é uma metáfora sobre nada na minha vida, é um situação real com um filme com final bem bobo e sem graça.
+
+
+Obs. 2: Mas se pensar bem, até funciona como metáfora também.
+
+
+
+[originalmente publicado em 11 de outubro de 2012 no meu extinto blog 
+
+"Eu ainda estava morta...'''
+
+palavras_sep = texto.split()
+
+qtd_palavras = {}
+
+for i in palavras_sep:
+    if i in qtd_palavras:
+        qtd_palavras[i] += 1
     else:
-        lista_impar.append(i)
+        qtd_palavras[i] = 1
 
-
-print(f"A lista de valores pares sao: {lista_par}")
-print(f"A lista de valores pares sao: {lista_impar}")
+print(qtd_palavras)
