@@ -65,7 +65,7 @@
 #     print("Informe um e-mail valido")
 
 
-
+# Agrupar valores em listas de acordo com o tipo do numero se impar ou par.
 # lista_impar = []
 
 # lista_par = []
@@ -82,6 +82,9 @@
 # print(f"A lista de valores pares sao: {lista_par}")
 # print(f"A lista de valores impares sao: {lista_impar}")
 
+
+### Exercício 6. Contagem de Palavras em Textos
+# Objetivo:** Dado um texto, contar quantas vezes cada palavra única aparece nele.
 
 texto = '''arte de levar aproximadamente 28 minutos para decidir o que assistir na Netflix e então escolher uma opção que parece bacana e pensar "Tem algo familiar nesse filme, eu acho que eu já vi algum pedaço dele antes, mas eu devo ter dormido no meio porque não lembro do final".
 
